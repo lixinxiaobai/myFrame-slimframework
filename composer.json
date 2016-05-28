@@ -1,0 +1,13 @@
+{
+    "require": {
+        "php": ">=5.3.0",
+        "slim/slim": "^3.4",
+        "illuminate/database": "*",
+        "slim/php-view": "^2.1"
+    },
+    "autoload": {
+        "classmap": [
+            "app/models"
+        ]
+    }
+}
