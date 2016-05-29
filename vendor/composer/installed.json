@@ -749,28 +749,92 @@
         ]
     },
     {
-        "name": "slim/php-view",
-        "version": "2.1.0",
-        "version_normalized": "2.1.0.0",
+        "name": "twig/twig",
+        "version": "v1.24.0",
+        "version_normalized": "1.24.0.0",
         "source": {
             "type": "git",
-            "url": "https://github.com/slimphp/PHP-View.git",
-            "reference": "8bae5b10d10c51596ef8d8113b3b63678718adcb"
+            "url": "https://github.com/twigphp/Twig.git",
+            "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8"
         },
         "dist": {
             "type": "zip",
-            "url": "https://packagist.phpcomposer.com/files/slimphp/PHP-View/8bae5b10d10c51596ef8d8113b3b63678718adcb.zip",
-            "reference": "8bae5b10d10c51596ef8d8113b3b63678718adcb",
+            "url": "https://packagist.phpcomposer.com/files/twigphp/Twig/3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8.zip",
+            "reference": "3e5aa30ebfbafd5951fb1b01e338e1800ce7e0e8",
             "shasum": ""
         },
         "require": {
-            "psr/http-message": "^1.0"
+            "php": ">=5.2.7"
         },
         "require-dev": {
-            "phpunit/phpunit": "^5.0",
-            "slim/slim": "^3.0"
+            "symfony/debug": "~2.7",
+            "symfony/phpunit-bridge": "~2.7"
         },
-        "time": "2016-03-04 09:48:50",
+        "time": "2016-01-25 21:22:18",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.24-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-0": {
+                "Twig_": "lib/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Fabien Potencier",
+                "email": "fabien@symfony.com",
+                "homepage": "http://fabien.potencier.org",
+                "role": "Lead Developer"
+            },
+            {
+                "name": "Armin Ronacher",
+                "email": "armin.ronacher@active-4.com",
+                "role": "Project Founder"
+            },
+            {
+                "name": "Twig Team",
+                "homepage": "http://twig.sensiolabs.org/contributors",
+                "role": "Contributors"
+            }
+        ],
+        "description": "Twig, the flexible, fast, and secure template language for PHP",
+        "homepage": "http://twig.sensiolabs.org",
+        "keywords": [
+            "templating"
+        ]
+    },
+    {
+        "name": "slim/twig-view",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/slimphp/Twig-View.git",
+            "reference": "16fded26a44b8e8e0e041f1cff32afa21daeb284"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://packagist.phpcomposer.com/files/slimphp/Twig-View/16fded26a44b8e8e0e041f1cff32afa21daeb284.zip",
+            "reference": "16fded26a44b8e8e0e041f1cff32afa21daeb284",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.5.0",
+            "psr/http-message": "^1.0",
+            "twig/twig": "^1.18"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "^4.8.0"
+        },
+        "time": "2016-03-13 20:58:41",
         "type": "library",
         "installation-source": "dist",
         "autoload": {
@@ -784,18 +848,18 @@
         ],
         "authors": [
             {
-                "name": "Glenn Eggleton",
-                "email": "geggleto@gmail.com"
+                "name": "Josh Lockhart",
+                "email": "hello@joshlockhart.com",
+                "homepage": "http://joshlockhart.com"
             }
         ],
-        "description": "Render PHP view scripts into a PSR-7 Response object.",
+        "description": "Slim Framework 3 view helper built on top of the Twig templating component",
+        "homepage": "http://slimframework.com",
         "keywords": [
             "framework",
-            "php",
-            "phtml",
-            "renderer",
             "slim",
             "template",
+            "twig",
             "view"
         ]
     }

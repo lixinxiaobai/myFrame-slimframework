@@ -3,9 +3,9 @@
 return array(
     'driver' => 'mysql',
     'host' => 'localhost',
-    'database' => 'test',
+    'database' => 'exam_a',
     'username' => 'root',
-    'password' => 'root',
+    'password' => '',
     'prefix' => '',
     'charset' => 'utf8',
     'collation' => 'utf8_general_ci',

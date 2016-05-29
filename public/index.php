@@ -6,6 +6,9 @@ define("DS", DIRECTORY_SEPARATOR);
 define("ROOT", realpath(dirname(__DIR__)) . DS);
 define("VENDORDIR", ROOT . "vendor" . DS);
 define("ROUTEDIR", ROOT . "app" . DS . "routes" . DS);
+define("LIBDIR", ROOT . "app" . DS . "libs" . DS);
+define("CONTROLLERDIR", ROOT . "app" . DS . "controller" . DS);
+define("MIDDLEWARERDIR", ROOT . "app" . DS . "middleware" . DS);
 define("TEMPLATEDIR", ROOT . "templates" . DS);
 define("LANGUAGEDIR", ROOT . "languages" . DS);
 
