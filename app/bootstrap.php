@@ -48,12 +48,11 @@ foreach (glob(LIBDIR . '*.php') as $filename) {
 }
 
 /**
- * 加载所有的controller的文件, 可以使用路由调用
+ * 加载所有的CONTAINER的文件, 服务提供者，依赖注入
  */
-foreach (glob(CONTROLLERDIR . '*.php') as $filename) {
+foreach (glob(CONTAINERDIR . '*.php') as $filename) {
     require_once $filename;
 }
-
 
 /**
  * 加载所有的Middleware的文件, 中间件类
@@ -61,3 +60,11 @@ foreach (glob(CONTROLLERDIR . '*.php') as $filename) {
 foreach (glob(MIDDLEWARERDIR . '*.php') as $filename) {
     require_once $filename;
 }
+
+/**
+ * 加载所有的controller的文件, 可以使用路由调用
+ */
+foreach (glob(CONTROLLERDIR . '*.php') as $filename) {
+    require_once $filename;
+}
+
