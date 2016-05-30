@@ -4,6 +4,8 @@
 
 ## 目录结构
 * `app` 项目主要文件
+	*  `container` 容器，依赖注入，服务提供者
+	*  `middleware` 中间件文件
     *  `models` model文件，添加一个model之后，使用```composer dump-autoload```命令进行自动加载model
     *  `routes` 路由文件，具体去slimFramework官网去看路由说明 [路由地址](http://www.slimframework.com/docs/objects/router.html)
     *  `bootstrap.php` 是启动文件
